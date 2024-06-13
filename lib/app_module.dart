@@ -10,6 +10,7 @@ import 'package:mybca_prototype/screens/profile/profile.dart';
 import 'package:mybca_prototype/screens/profile/profile_provider.dart';
 import 'package:mybca_prototype/screens/qris/pembayaran_qris_page.dart';
 import 'package:mybca_prototype/screens/qris/qris.dart';
+import 'package:mybca_prototype/screens/qris/qris_bayar.dart';
 import 'package:mybca_prototype/screens/qris/qris_provider.dart';
 import 'package:mybca_prototype/screens/riwayat/riwayatPage.dart';
 import 'package:mybca_prototype/screens/riwayat/riwayatPage2.dart';
@@ -100,6 +101,9 @@ class AppModule extends Module {
         transition: TransitionType.rightToLeftWithFade);
     r.child('/PembayaranQRISPage',
         child: (context) => const PembayaranQrisPage(),
+        transition: TransitionType.rightToLeftWithFade);
+    r.child('/QrisBayarPage',
+        child: (context) => const QrisBayarPage(),
         transition: TransitionType.rightToLeftWithFade);
   }
 }

@@ -174,7 +174,7 @@ class _QRScannerPageState extends State<QRScannerPage> {
                           ),
                           child: Text(
                             'Bayar',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
+                            style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
                             textAlign: TextAlign.center,
                           ),
                         ),
@@ -182,19 +182,17 @@ class _QRScannerPageState extends State<QRScannerPage> {
                       SizedBox(
                         width: 150,
                         height: 65,
-                        child: ElevatedButton(
-                          onPressed: () => provider.toPembayaranQRIS(),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFF0060AF),
-                            foregroundColor: Colors.white,
+                        child: OutlinedButton(
+                          onPressed: () => provider.toQrisBayarPage(),
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(color: Color(0xFF0060AF), width: 4),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
                           child: Text(
                             'Transfer',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
-                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: 20, color:  Color(0xFF0060AF),fontWeight: FontWeight.bold), textAlign: TextAlign.center,
                           ),
                         ),
                       ),

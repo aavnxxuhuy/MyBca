@@ -11,8 +11,18 @@ class QrisProvider with ChangeNotifier {
     Modular.to.pushNamed('/PembayaranQRISPage');
   }
 
+  void toQrisBayarPage() {
+    Modular.to.pushNamed('/QrisBayarPage');
+  }
+
+  void toQRScannerPage() {
+    Modular.to.pushNamed('/QRScannerPage');
+  }
+
   @override
   void dispose() {
     // TODO: implement dispose
   }
+
+  toQRISBayarPage() {}
 }
